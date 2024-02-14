@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .video {
+            width: 480px;
+            height: 360px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: black;
+        }
+        .popup-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+        .popup-video-content {
+            position: absolute;
+            top: 100px;
+            left: calc(50% - 566px); /* Assuming content width is 320px */
+            z-index: 1000;
+            background-color: white;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="button" onclick="playBothVideos()">Start Segmentation</button>
+        <button class="button" onclick="pauseBothVideos()">Stop Segmentation</button>
+        <button class="button" onclick="showGifPopup()">Transfer Data</button>
+        <button class="button" onclick="popupVideo()">Start Annotation</button>
+        <button class="button" onclick="closePopup()">Stop Annotation</button>
+        <button class="button" onclick="showGifPopup2()">Strat FineTune</button>
+        <button class="button" onclick="changeVideos()">Transfer Model</button>
+    </div>
+    <div class="video-container" id="videoContainer">
+        <video id="video1" class="video" controls>
+            <source src="/static/video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video id="video3" class="video" style="display: none;" controls>
+            <source src="/static/video3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video id="video2" class="video" controls>
+            <source src="/static/video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script>
+        function playBothVideos() {
+            var video1 = document.getElementById('video1');
+            var video2 = document.getElementById('video2');
+            var video3 = document.getElementById('video3');
+            video1.play();
+            video2.play();
+            video3.play();
+        }
+
+        function pauseBothVideos() {
+            var video1 = document.getElementById('video1');
+            var video2 = document.getElementById('video2');
+            var video3 = document.getElementById('video3');
+            video1.pause();
+            video2.pause();
+            video3.pause();
+        }
+
+        function showGifPopup() {
+            var gifPopup = document.createElement('img');
+            gifPopup.src = '/static/animated.gif';
+            gifPopup.width = 640;
+            gifPopup.height = 480;
+            gifPopup.classList.add('popup-content');
+            gifPopup.id = 'gifPopup';
+            document.body.appendChild(gifPopup);
+            setTimeout(closePopup, 4500); // Close popup after 4.5 seconds (4500 milliseconds)
+        }
+        function showGifPopup2() {
+            var gifPopup = document.createElement('img');
+            gifPopup.src = '/static/animated2.gif';
+            gifPopup.width = 640;
+            gifPopup.height = 480;
+            gifPopup.classList.add('popup-content');
+            gifPopup.id = 'gifPopup';
+            document.body.appendChild(gifPopup);
+            setTimeout(closePopup, 4500); // Close popup after 4.5 seconds (4500 milliseconds)
+        }
+
+        function popupVideo() {
+            var popupVideo = document.createElement('video');
+            popupVideo.src = '/static/popup-video.mp4';
+            popupVideo.controls = true;
+            popupVideo.autoplay = true; // Autoplay the video
+            popupVideo.width = 1132;
+            popupVideo.height = 724;
+            popupVideo.playbackRate = 3; // Set playback speed to 2x
+            popupVideo.classList.add('popup-video-content');
+            popupVideo.id = 'popupVideo'; // Assign an ID to the popup video
+            document.body.appendChild(popupVideo);
+        }
+
+        function closePopup() {
+            var popupElement = document.getElementById('popupVideo') || document.getElementById('gifPopup');
+            if (popupElement) {
+                popupElement.parentNode.removeChild(popupElement); // Remove the popup from the DOM
+            }
+        }
+
+        function changeVideos() {
+            var videoContainer = document.getElementById('videoContainer');
+            var video2 = document.getElementById('video2');
+            var video3 = document.getElementById('video3');
+            
+            videoContainer.insertBefore(video3, video2);
+            video3.style.display = 'block';
+            video1.play();
+            video2.play();
+            video3.play();
+        }
+    </script>
+</body>
+</html>
