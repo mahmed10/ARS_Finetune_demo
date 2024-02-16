@@ -18,3 +18,5 @@ There are seven button, which performs different task of the demo.
 - **Stop Annotation** Annotation process will be stopped
 - **Start FineTune** Server will start fine-tunning the model with annotated data
 - **Transfer Model** Updated model will be transfered to the robot from server
+
+## Storyline
