@@ -6,9 +6,11 @@
 - Chrome Web Browser
 
 ## Install instruction
-- Clone this git `git clone `
+- Clone this git `git clone https://github.com/mahmed10/ARS_Finetune_demo.git`
 - Go to the directory `cd ARS_Finetune_demo`
-- 
+- Run the py file `python app.py`
+- Open the web browser
+- Go to the following address `localhost:5000`
 
 ## Overview
 Click the following video to see the full demo
