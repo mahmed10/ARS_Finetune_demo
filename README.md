@@ -47,9 +47,10 @@ The demo unfolds through an intuitive interface, accessible via a web browser. S
 12. For reference, you can see two segmentation window, where the middle window is showing the result after finetunning the model and the right side is showing the result without finetunning the model, which is still not good enough.
 13. In the final product it will show only segmentation window using the finetunned model.
 
-[**N.B:** Please click the Stop Segmentation button within 15-20 clicks after clicking the Start Segmentation button.]
-[**N.B:** Please wait for the GIF to disappear after that press Start Annotation button.]
-[**N.B:** Same thing goes for before clicking Transfer Model button.]
+**N.B:** 
+- Please click the Stop Segmentation button within 15-20 clicks after clicking the Start Segmentation button.
+- Please wait for the GIF to disappear after that press Start Annotation button.
+- Same thing goes for before clicking Transfer Model button.
 --- 
 
 Through a captivating demo video, viewers are invited to witness this transformative journey, where innovation meets necessity, and technology paves the way for seamless adaptation and enhanced performance in the ever-evolving landscape of robotics and AI.
