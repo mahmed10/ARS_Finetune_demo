@@ -47,7 +47,7 @@ The demo unfolds through an intuitive interface, accessible via a web browser. S
 12. For reference, you can see two segmentation window, where the middle window is showing the result after finetunning the model and the right side is showing the result without finetunning the model, which is still not good enough.
 13. In the final product it will show only segmentation window using the finetunned model.
 
-**N.B:** 
+**N.B:** Please consider following points
 - Please click the Stop Segmentation button within 15-20 clicks after clicking the Start Segmentation button.
 - Please wait for the GIF to disappear after that press Start Annotation button.
 - Same thing goes for before clicking Transfer Model button.
