@@ -1,8 +1,9 @@
 # ARS_Finetune_demo
 
-## Pre-Requiste
+## Prerequisite
 - Python
-- Flask `(pip install Flask)`
+- Flask (`pip install Flask`)
 - Chrome Web Browser
 
 ## Overview
+  [https://www.youtube.com/watch?v=22EMXAfQhD8]
