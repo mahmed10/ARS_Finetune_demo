@@ -6,4 +6,4 @@
 - Chrome Web Browser
 
 ## Overview
-  [https://www.youtube.com/watch?v=22EMXAfQhD8]
+[link text](https://www.youtube.com/watch?v=22EMXAfQhD8)
