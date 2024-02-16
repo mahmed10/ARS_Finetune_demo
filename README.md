@@ -14,6 +14,7 @@
 
 ## Overview
 Click the following video to see the full demo
+
 [![Demo Video](http://img.youtube.com/vi/22EMXAfQhD8/0.jpg)](http://www.youtube.com/watch?v=22EMXAfQhD8)
 
 ## Functionality of the demo
