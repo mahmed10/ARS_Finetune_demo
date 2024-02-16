@@ -28,7 +28,7 @@ There are seven button, which performs different task of the demo.
 - **Transfer Model:** Updated model will be transfered to the robot from server
 
 ## Storyline
-In a world where robots are indispensable for various tasks, especially in traversing unknown territories, there exists a challenge: the transition from urban to rural environments often leads to performance degradation in semantic segmentation models. To tackle this issue, a team of researchers and developers embarked on a journey to create a solution: the ARS_Finetune_demo.
+In a world where robots are indispensable for various tasks, especially in traversing unknown territories, there exists a challenge: the transition from urban to rural environments often leads to performance degradation in semantic segmentation models. To tackle this issue, we embarked on a journey to create a solution: the ARS_Finetune_demo.
 
 At its core, ARS_Finetune_demo is an innovative web-based application designed to fine-tune semantic segmentation models on-the-fly with minimal labeled data from rural environments. The journey begins with the deployment of a robot into real-time environments, where it encounters diverse landscapes and scenarios.
 
