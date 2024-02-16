@@ -11,8 +11,7 @@ Click the following video to see the full demo
 
 ## Functionality of the demo
 There are seven button, which performs different task of the demo.
-### Start Segmentation
-Perform segementation on Real-time and display the result at user endpoint
+-- **Start Segmentation** Perform segementation on Real-time and display the result at user endpoint
 ### Stop Segmentation
 Stop the semantic segmentation
 ### Transfer Data
