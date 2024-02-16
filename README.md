@@ -36,13 +36,10 @@ The demo unfolds through an intuitive interface, accessible via a web browser. S
 
 1. **(Click Start Segmentation button):** The robot initiates semantic segmentation in real-time whenever the user clicks the Start Segmentation button, capturing the essence of its surroundings and displaying the results at the user's endpoint.
 2. **(Click Stop Segmentation button):** When needed, the segmentation process can be halted, allowing for control and precision in data acquisition.
-
-[**N.B:** Please click the Stop Segmentation button within 15-20 clicks after clicking the Start Segmentation button.]
 4. Here, you can observe that the robot is not performing well.
 5. It's important to note that when the robot performs inference, it also keeps track of the performance based on entropy. Based on entropy calculation, it will keep track of the hard images and the hard regions of those images where the model is not performing well.
 6. If a user wants, they can fine-tune the model on the fly with a small fraction (approximately 5%) of those hard images' hardest regions.
 7. **(Click Transfer Data button):** When a user presses the Transfer Data button, the robot seamlessly transmits those hard regions of those hard samples to the user's endpoint, laying the groundwork for further analysis and refinement.
-[**N.B:** Please wait for the GIF to disappear.]
 8. **(Click Start Annotation button):** Upon receiving this data at the user's endpoint, the user can annotate those hard regions so that the model can be fine-tuned with this data.
 9. **(Click Stop Annotation button):** With annotation complete, this button signifies the conclusion of the user's input phase, preparing the stage for model fine-tuning.
 10. **(Click Start FineTune button):** After finishing annotation, when the user presses this button, the server comes into action, leveraging the annotated data to fine-tune the semantic segmentation model, adapting it to the nuances of rural environments.
@@ -50,7 +47,9 @@ The demo unfolds through an intuitive interface, accessible via a web browser. S
 12. For reference, you can see two segmentation window, where the middle window is showing the result after finetunning the model and the right side is showing the result without finetunning the model, which is still not good enough.
 13. In the final product it will show only segmentation window using the finetunned model.
 
-N.B: Please click the Stop Segmentation button within 15-20 clicks after clicking the Start Segmentation button.
+[**N.B:** Please click the Stop Segmentation button within 15-20 clicks after clicking the Start Segmentation button.]
+[**N.B:** Please wait for the GIF to disappear after that press Start Annotation button.]
+[**N.B:** Same thing goes for before clicking Transfer Model button.]
 --- 
 
 Through a captivating demo video, viewers are invited to witness this transformative journey, where innovation meets necessity, and technology paves the way for seamless adaptation and enhanced performance in the ever-evolving landscape of robotics and AI.
