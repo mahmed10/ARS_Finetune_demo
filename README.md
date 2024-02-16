@@ -44,6 +44,10 @@ The demo unfolds through an intuitive interface, accessible via a web browser. S
 8. **(Click Stop Annotation button):** With annotation complete, this button signifies the conclusion of the user's input phase, preparing the stage for model fine-tuning.
 9. **(Click Start FineTune button):** After finishing annotation, when the user presses this button, the server comes into action, leveraging the annotated data to fine-tune the semantic segmentation model, adapting it to the nuances of rural environments.
 10. **(Click Transfer Model button):** As the climax of the narrative unfolds, the updated model is transmitted back to the robot from the server, equipped with newfound knowledge and capabilities to navigate and understand its surroundings more effectively.
+11. For reference, you can see two segmentation window, where the middle window is showing the result after finetunning the model and the right side is showing the result without finetunning the model, which is still not good enough.
+12. In the final product it will show only segmentation window using the finetunned model.
 --- 
 
 Through a captivating demo video, viewers are invited to witness this transformative journey, where innovation meets necessity, and technology paves the way for seamless adaptation and enhanced performance in the ever-evolving landscape of robotics and AI.
+
+
