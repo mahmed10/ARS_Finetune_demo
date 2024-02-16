@@ -46,6 +46,8 @@ The demo unfolds through an intuitive interface, accessible via a web browser. S
 10. **(Click Transfer Model button):** As the climax of the narrative unfolds, the updated model is transmitted back to the robot from the server, equipped with newfound knowledge and capabilities to navigate and understand its surroundings more effectively.
 11. For reference, you can see two segmentation window, where the middle window is showing the result after finetunning the model and the right side is showing the result without finetunning the model, which is still not good enough.
 12. In the final product it will show only segmentation window using the finetunned model.
+
+N.B: Please click the Stop Segmentation button within 15-20 clicks after clicking the Start Segmentation button.
 --- 
 
 Through a captivating demo video, viewers are invited to witness this transformative journey, where innovation meets necessity, and technology paves the way for seamless adaptation and enhanced performance in the ever-evolving landscape of robotics and AI.
